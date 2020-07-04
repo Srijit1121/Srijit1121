@@ -178,7 +178,7 @@ p {
 
 nav {
   position: fixed;
-  background: #000000;
+  background: transparent;
   z-index: 1000;
   width: 100%;
   padding: 20px;
