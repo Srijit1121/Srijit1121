@@ -178,7 +178,7 @@ p {
 
 nav {
   position: fixed;
-  background: transparent;
+  background: whitesmoke;
   z-index: 1000;
   width: 100%;
   padding: 20px;
@@ -222,8 +222,8 @@ nav ul li a {
 }
 
 .logo img {
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 75px;
 }
 
 .responsive {
@@ -232,7 +232,7 @@ nav ul li a {
 }
 
 .active {
-  color: #000000;
+  color: Black;
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -290,7 +290,7 @@ nav ul li a {
 #about {
   width: 100%;
   height: auto;
-  background: #000000;
+  background: Black;
   padding-top: 190px;
 }
 
@@ -325,7 +325,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #services {
-  background: #000000;
+  background: Black;
   position: relative;
   padding-bottom: 80px;
 }
@@ -574,7 +574,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #footer {
-  background: #000000;
+  background: Black;
   padding-top: 50px;
   padding-bottom: 50px;
 }
