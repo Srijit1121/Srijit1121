@@ -1,7 +1,7 @@
 body{
   width: 100vw;
   height: 100vh;
-  background: url(image/goldd.jpg);
+  background-color: #c694fb;
   background-size: cover;
    background-attachment: fixed;
 }
