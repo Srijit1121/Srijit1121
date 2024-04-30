@@ -2,576 +2,431 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script src="script.js" defer></script>
-  <link rel="stylesheet" href="styless.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="scripts.js"></script>
-  <title>Bravo international</title>
-  <link rel="stylesheet" href="navbar.css">
-  <script src="navbar.js" defer></script>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,300;1,400&family=Montserrat:wght@300&family=PT+Serif&family=Prompt&family=Raleway:wght@500&display=swap"
-    rel="stylesheet">
+  <title> Srijit koirala </title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <style>
 
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/hover/hover.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Responsive css -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/Favicon.png">
+
+  <!-- =======================================================
+    Theme Name: Folio
+    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
 </head>
 
 <body>
-  <center>
-    <h1 class="slogon">THINK ABROAD, THINK BRAVO</h1>
-  </center>
-  <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"> <img height="50px" src="image/logo.jpg" alt=""></a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About US</a>
-          </li>
-          <!-- study Abroad -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Study Abroad
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="australia.html">Australia</a></li>
-              <li><a class="dropdown-item" href="uk.html">United Kingdom</a></li>
-              <li><a class="dropdown-item" href="Canada.html">Canada</a></li>
-              <li><a class="dropdown-item" href="us.html">United States</a></li>
-              <li><a class="dropdown-item" href="nz.html">New Zealand</a></li>
-            </ul>
-          </li>
-          <!-- study Abroad end -->
-          <!-- Prepare with US -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Prepare with Us
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="Sat.html">SAT</a></li>
-              <li><a class="dropdown-item" href="ielts.html">IELTS</a></li>
-              <li><a class="dropdown-item" href="Tofel.html">TOEFL</a></li>
-              <li><a class="dropdown-item" href="Pte.html">PTE</a></li>
-              <li><a class="dropdown-item" href="Gre.html">GRE</a></li>
-            </ul>
-          </li>
-          <!-- Prepare with Us -->
+  <!-- start section navbar -->
+  <nav id="main-nav">
+    <div class="row">
+      <div class="container">
 
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact US</a>
-          </li>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </div>
 
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+        <ul class="nav-menu list-unstyled">
+          <li><a href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+          <li><a href="#journal" class="smoothScroll">Blog</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact </a></li>
+          <li> <button onclick="myFunction()"> <img src="images/dark.png" alt="img" width="20" height="20"></button> </li>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+} 
+</script>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
+
+
+  <!-- start section header -->
+  <div id="header" class="home">
+
+    <div class="container">
+      <div class="header-content">
+        <h1>I'm <span class="typed"></span></h1>
+        <p>Student, learner  </p>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="https://www.facebook.com/sreezeet.koirala"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="https://twitter.com/srijit63945939"><i class="ion-social-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/srijit73/"><i class="ion-social-instagram"></i></a></li>
 
         </ul>
       </div>
     </div>
-  </nav>
-  <!-- Autoplay carousel start-->
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-
-      <div class="carousel-item active">
-        <img src="/image/c1.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item ">
-        <img src="/image/c2.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item ">
-        <img src="/image/c3.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
   </div>
-  <!-- Autoplay carousel end-->
+  <!-- End section header -->
 
-  <div class="container">
-    <img class="dirimg" height="150px" src="image/Director.jpg" alt="Director's image">
-    <br>
-    <h1>Message from the Director </h1>
-    <div class="content">
-      <p> <i>
-          It has been an unbelievable journey at Bravo since its establishment. I wouldn’t say it has always been easy
-          though as we not only have celebrated successes but have also suffered disappointments, but with each failure
-          we
-          fell forward and stuck to the right principles and correct values with utmost professionalism and
-          responsiveness.
-          We do not like to make a lot of promises, but it is without any question your career is our priority and we
-          are truly committed to help you pursue the path you always dreamed of. Therefore, our shared goal is your
-          success stories and we would be over the moon to be part of them.
-          <b>We assure you all we would not settle for anything less than 100 percent.</b>
-        </i>
 
-      </p>
-    </div>
+  <!-- start section about us -->
 
-  </div>
+<style>
 
-  <img src="image/img1.png" class="img-fluid" alt="...">
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
 
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <!-- one open -->
-        <div class="testimonial-container">
-          <div class="testimonial">
-            <img src="image/mahesh.JPG" alt="Testimonial 1">
-            <div class="testimonial-content">
-              <p class="testimonial-quote"> <br>"I have had the pleasure of knowing Mr. Santosh Pokhrel for over a
-                decade
-                now, and his role in shaping my academic journey has been significant. As a close
-                mentor, he helped me streamline my academic choices and supported me during the application and test
-                preparations. His guidance has led me to obtain my Bachelor's and Master's degrees from the world's top
-                universities with full scholarships. I can attest to Mr. Pokhrel's expertise and experience and
-                recommend his services with utmost confidence and enthusiasm." </p>
-              <p class="testimonial-name">Mahesh</p>
-              <p class="testimonial-other">US</p>
-              <p class="testimonial-other">Soka University,California</p>
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="images/me.jpg" class="img-responsive" alt="me">
             </div>
           </div>
         </div>
-        <!-- one end -->
 
+        <div class="col-lg-7">
+          <div class="about-descr">
 
-      </div>
+            <p class="p-heading">I am a middle-class boy having a simple life with a huge dream to keep my family happy till the end of world ❤️ .</p>
+            <p class="separator"> As a student i learnt this as a passion  . 
 
-      <div class="carousel-item">
-        <div class="testimonial-container">
-          <div class="testimonial">
-            <img src="image/peter.jpg" alt="Testimonial 1">
-            <div class="testimonial-content">
-              <p class="testimonial-quote"> <br>It was an incredible experience to be part of Bravo for IELTS prep and
-                what
-                surprised me the most was their classroom approach. The classes are so engaging and intriguing that the
-                time passes very quicky and makes you come for the next class already. It is almost like watching a
-                series and you can’t wait for the next episode. In other words, they make you want it more while being
-                hungry for the lessons. In short, the classes are great fun and enlightening!</p>
-              <p class="testimonial-name">Peter Jimee Rai</p>
-              <p class="testimonial-other">Test Prep</p>
-            </div>
           </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="testimonial-container">
-          <div class="testimonial">
-            <img src="image/Ujjwal.jpeg" alt="Testimonial 1">
-            <div class="testimonial-content">
-              <p class="testimonial-quote">
-                I always had a strong desire to pursue my higher education in the US, but I was unsure where to begin.
-                After browsing numerous consultancies in Kathmandu, I felt discouraged due to a sense of dishonesty and
-                lack of financial transparency. Instead, I started my bachelor's degree in Nepal. A year later, I met
-                Santosh sir through a relative, which changed everything. Looking back today, I've completed my
-                undergraduate and graduate degrees in the US and am currently working as a research scientist at R1
-                institution, all thanks to Santosh sir and Bravo team, who guided me through the application process.
-              </p>
-              <p class="testimonial-name">Ujjwal Adhikari</p>
-              <p class="testimonial-other">US</p>
-              <p class="testimonial-other">University of Idaho</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="testimonial-container">
-          <div class="testimonial">
-            <img src="image/prajita.jpg" alt="Testimonial 1">
-            <div class="testimonial-content">
-              <p class="testimonial-quote"><br>Hello everyone, my name is Prajita Adhikari. I am recently studying in
-                Niagara College Toronto. My experience with Bravo was nothing short of exceptional. Choosing Bravo was
-                one of the best decisions I made. They consistently delivered results that exceeded my expectations. I
-                can't thank enough for their outstanding support. Their tailored approach, attention to detail, and
-                commitment to our success were exceptional. Choose the best, Believe in Bravo.</p> <br>
-              <p class="testimonial-name">Prajita Adikari</p>
-              <p class="testimonial-other">Canada</p>
-              <p class="testimonial-other">Niagara College, Toronto</p>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
   </div>
-  <!-- country  country country country-->
-  <center>
-    <h1 class="topic1">Choose Your Destination</h1>
-  </center>
+  <!-- end section about us -->
 
 
+  <!-- start section services -->
+  <div id="services">
+    <div class="container">
 
-  <!-- TRY -->
+        <div class="services-carousel owl-theme">
 
-  <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <!-- grid -->
-        <div class="bodyy">
-          <div class="grid-container">
-            <div class="grid-item">
+          <div class="services-block">
 
-              <img src="image/uk.png" class="card-img-top" alt="..."> <br>
-              <div class="card-body">
-                <h5 class="card-title">Study in United Kingdom </h5>
-
-                <a href="uk.html" class="btn btn-primary">Know more</a>
-              </div>
-
-            </div>
-            <div class="grid-item"><img src="image/us image.png" class="card-img-top" alt="..."> <br>
-              <div class="card-body">
-                <h5 class="card-title">Study in United States</h5>
-
-                <a href="us.html" class="btn btn-primary">Know more</a>
-              </div>
-            </div>
+            <i class="ion-ios-book-outline"></i>
+            <span> Student </span>
+            <p class="separator">Studying in Nihareeka college BIratnagar.  </p>
 
           </div>
-        </div><!-- grid -->
 
-      </div>
-      <div class="carousel-item">
-        <!-- grid -->
-        <div class="bodyy">
-          <div class="grid-container">
-            <div class="grid-item">
+          <div class="services-block">
 
-              <img src="image/canada.png" class="card-img-top" alt="..."> <br>
-              <div class="card-body">
-                <h5 class="card-title">Study in Canada</h5>
-
-                <a href="Canada.html" class="btn btn-primary">Know more</a>
-              </div>
-
-            </div>
-            <div class="grid-item"><img src="image/australia.png" class="card-img-top" alt="..."> <br>
-              <div class="card-body">
-                <h5 class="card-title">Study in Australia</h5>
-
-                <a href="australia.html" class="btn btn-primary">Know more</a>
-              </div>
-            </div>
+            <i class="ion-ios-person-outline"></i>
+            <span>ADMIN</span>
+            <p class="separator">Srijit koirala</p>
 
           </div>
-        </div><!-- grid -->
 
-      </div>
-      <div class="carousel-item">
-        <!-- grid -->
-        <div class="bodyy">
-          <div class="grid-container">
-            <div class="grid-item">
+          <div class="services-block">
 
-              <img src="image/New Zealand.png" class="card-img-top" alt="..."> <br>
-              <div class="card-body">
-                <h5 class="card-title">Study in New Zealand</h5>
-
-                <a href="nz.html" class="btn btn-primary">Know more</a>
-              </div>
-
-            </div>
-            <div class="grid-item"><img src="image/canada.png" class="card-img-top" alt="..."> <br>
-              <div class="card-body">
-                <h5 class="card-title">Study in Canada</h5>
-
-                <a href="Canada.html" class="btn btn-primary">Know more</a>
-              </div>
-            </div>
+            <i class="ion-ios-browsers-outline"></i>
+            <span>WEB DESIGN</span>
+            <p class="separator">Learning basics </p>
 
           </div>
-        </div>
-        <!-- grid -->
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- TRY -->
 
-  <!-- What separates us among all? --><!-- What separates us among all? --><!-- What separates us among all? -->
-  <center>
-    <h1 class="topic2">What separates us among all?</h1>
-  </center>
-  <div class="bodyy">
-    <div class="grid-container boxx diffinus">
+          <div class="services-block">
 
-      <div class="grid-item diffinus-item">
-        <img src="image/service first.jpg" class="card-img-top" alt="..."> <br>
-        <hr>
-        <div class="card-body">
-          <p class="testimonial-quote"> Because your career is our top-most priority, we leave no stones unturned for
-            your great
-            learning experience in the chosen field. We are sincerely committed and utterly driven to
-            work in your best interest.
-          </p>
-        </div>
-      </div>
+            <i class="ion-social-android-outline"></i>
+            <span>MOBILE APPS</span>
+            <p class="separator"> Use basic android apps .  </p>
 
+          </div>
 
-      <div class="grid-item diffinus-item">
-        <img src="image/Personalized counseling.jpg" class="card-img-top" alt="...">
-        <hr>
-        <div class="card-body">
-          <p class="testimonial-quote">Our team of experts closely examines your case, paying exclusive attention to
-            practically
-            applicable details, before offering you reputable and ingenious solutions. Each learner is
-            worthy of a chance!
-          </p>
-        </div>
-      </div>
-      <div class="grid-item diffinus-item">
-        <img src="image/Resourceful and elegant-test preparation.jpg" class="card-img-top" alt="...">
-        <hr>
-        <div class="card-body">
-          <p class="testimonial-quote"> Your overseas educational approach, which will be followed by an enjoyable
-            endeavor,
-            begins at a desk in a classroom. Given that the accredited team is directed by a
-            professional, with more than 15 years of expertise, you are free to inquire with your
-            instructors at any time of the day.
-          </p>
-        </div>
-      </div>
-      <div class="grid-item diffinus-item">
-        <img src="image/Best Institutions.jpg" class="card-img-top" alt="...">
-        <hr>
-        <div class="card-body">
-          <p class="testimonial-quote"> We do not rest until we find the best possible institutions that align with your
-            profile
-            perfectly. At the same time, we highly encourage your engagement in the research on
-            your courses, campuses, and your study destinations.
-          </p>
-        </div>
-      </div>
+         
 
+          <div class="services-block">
+
+            <i class="ion-ios-camera-outline"></i>
+            <span>PHOTOGRAPHY</span>
+            <p class="separator">Intrested</p>
+
+          </div>
+
+        </div>
 
     </div>
+
   </div>
+  <!-- end section services -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3491007085713951"
+     crossorigin="anonymous"></script>
+<!-- Random -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3491007085713951"
+     data-ad-slot="7294956885"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
+  <!-- start section portfolio -->
+  <div id="portfolio" class="text-center paddsection">
 
-  <!-- What separates us among all? end -->
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>My Portfolio</h2>
+      </div>
+    </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
 
-  <!-- cource --> <!-- cource --><!-- cource --><!-- cource --><!-- cource --><!-- cource -->
-  <center>
-    <h1 class="topic1">Prepare with Us</h1>
-  </center>
-  <!-- slide -->
-  <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <!-- grid -->
-        <div class="bodyy">
-          <div class="grid-container">
-            <div class="grid-item">
+          <div class="portfolio-list">
 
-              <img src="image/1.jpg" class="card-img-top" alt="..."> <br>
-              <div class="card-body">
-
-                <a href="Gre.html" class="btn btn-primary">GRE</a>
-              </div>
-
-            </div>
-            <div class="grid-item"><img src="image/2.jpg" class="card-img-top" alt="..."> <br>
-              <div class="card-body">
-
-                <a href="Pte.html" class="btn btn-primary">PTE</a>
-              </div>
-            </div>
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all">all</li>
+              <li class="filter" data-filter=".Own">Own</li>
+              <li class="filter" data-filter=".Family">Family</li>
+              <li class="filter" data-filter=".Friends"> Friends </li>
+              <li class="filter" data-filter=".webdesign"> </li>
+              <li class="filter" data-filter=".photography"></li>
+            </ul>
 
           </div>
-        </div><!-- grid -->
 
-      </div>
-      <div class="carousel-item">
-        <!-- grid -->
-        <div class="bodyy">
-          <div class="grid-container">
-            <div class="grid-item">
+          <div class="portfolio-container">
 
-              <img src="image/3.jpg" class="card-img-top" alt="..."> <br>
-              <div class="card-body">
-
-
-                <a href="Tofel.html" class="btn btn-primary">TOEFL</a>
-              </div>
-
-            </div>
-            <div class="grid-item"><img src="image/4.jpg" class="card-img-top" alt="..."> <br>
-              <div class="card-body">
-
-
-                <a href="ielts.html" class="btn btn-primary">IELTS</a>
-              </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Own">
+              <a class="popup-img" href="images/portfolio/1.jpg">
+                <img src="images/portfolio/1.jpg" alt="img" width="300" height="345">
+              </a>
             </div>
 
-          </div>
-        </div><!-- grid -->
-
-      </div>
-      <div class="carousel-item">
-        <!-- grid -->
-        <div class="bodyy">
-          <div class="grid-container">
-            <div class="grid-item">
-
-              <img src="image/1.jpg" class="card-img-top" alt="..."> <br>
-              <div class="card-body">
-
-
-                <a href="Gre.html" class="btn btn-primary">GRE</a>
-              </div>
-
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Family">
+              <a class="popup-img" href="images/portfolio/2.jpg">
+                <img src="images/portfolio/2.jpg"  alt="img" width="460" height="345">
+              </a>
             </div>
-            <div class="grid-item"><img src="image/5.jpg" class="card-img-top" alt="..."> <br>
-              <div class="card-body">
 
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Own">
+              <a class="popup-img" href="images/portfolio/3.jpeg">
+                <img src="images/portfolio/3.jpeg" alt="img" width="460" height="345">
+              </a>
+            </div>
 
-                <a href="Sat.html" class="btn btn-primary">SAT</a>
-              </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Family">
+              <a class="popup-img" href="images/portfolio/4.jpg">
+                <img src="images/portfolio/4.jpg" alt="img" width="460" height="345">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Own ">
+              <a class="popup-img" href="images/portfolio/5.jpg">
+                <img src="images/portfolio/5.jpg" alt="img"width="460" height="345">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Family">
+              <a class="popup-img" href="images/portfolio/6.jpg">
+                <img src="images/portfolio/6.jpg" alt="img" width="460" height="345">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Friends">
+              <a class="popup-img" href="images/portfolio/7.JPG">
+                <img src="images/portfolio/7.JPG" alt="img" width="460" height="345">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Friends">
+              <a class="popup-img" href="images/portfolio/8.JPG">
+                <img src="images/portfolio/8.JPG" alt="img" width="460" height="345">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Friends">
+              <a class="popup-img" href="images/portfolio/9.jpg">
+                <img src="images/portfolio/9.jpg" alt="img" width="460" height="345">
+              </a>
             </div>
 
           </div>
         </div>
-        <!-- grid -->
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+
   </div>
+  <!-- End section portfolio -->
 
-  <!-- Contact us -->
-  <style>
-    @media screen and (max-width: 900px) {
-      .container {
-        width: 95%;
-        margin: 10px auto;
-      }
-    }
 
-    .col {
-      border: 2px solid black;
-    }
+ 
 
-    h1 {
-      font-family: "Courier New", Courier, monospace;
-    }
+  <!-- start sectoion contact -->
+  <div id="contact" class="paddsection">
+    <div class="container">
+      <div class="contact-block1">
+        <div class="row">
 
-    h4 {
-      font-family: "Courier New", Courier, monospace;
-      font-weight: 600;
-      font-size: 15px;
-    }
+          <div class="col-lg-6">
+            <div class="contact-contact">
 
-    @media screen and (max-width: 700px) {
-      .row {
-        flex-direction: column;
-      }
+              <h2 class="mb-30">GET IN TOUCH</h2>
 
-      .col {
-        margin-top: 5px;
-      }
+              <ul class="contact-details">
+                <li><span>Biratnagar-3 </span></li>
+                <li><span>Morang, Nepal</span></li>
+                <li><span>9824349327</span></li>
+                <li><span>sriit.com.np</span></li>
+              </ul>
 
-      h4 {
-        font-size: 15px;
+            </div>
+          </div>
 
-      }
-    }
+          <div class="col-lg-6">
+            <form id="form" class="contact-form">
+            <form action="contact.php" method="post" id="form" class="contact-form">
+              <div class="row">
 
-    .bigbtn {
-      margin-bottom: 20px;
-    }
-  </style>
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
 
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <center>
-          <h1>About Company</h1>
-        </center>
-        <p>
-          Established in 2018, we have been tirelessly guiding and assisting our valued students and clients
-          en route to their dreams. We are a complete package that offer an insightful counselling, a
-          creative study ambience, result-oriented learning experience, detailed documentation, and careful
-          visa processing. We make sure that our clients receive our unwavering support while upholding
-          professionalism and proper value.
-        </p>
+                <div class="col-lg-6">
+                  <div class="form-group contact-block1">
+                    <input type="text" name="cf_name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
 
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="cf_email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="cf_subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="cf_message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <!-- start sectoion contact -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3491007085713951"
+     crossorigin="anonymous"></script>
 
 
-  <div class="container text-center colr1">
-    <div class="row">
-      <div class="col">
-        <h1>Location</h1>
-        <hr>
-        <h4> Putalisadak Chowk </h4>
-        <h4>Kathmandu </h4>
+
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="https://www.facebook.com/sreezeet.koirala"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="https://twitter.com/srijit63945939"><i class="ion-social-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/srijit73/"><i class="ion-social-instagram"></i></a></li>
+
+        </ul>
+
       </div>
 
-      <div class="col">
-        <h1>Contact</h1>
-        <hr>
-        <h4>Bravointernational.edu.np</h4>
-        <h4>9851352807</h4>
-      </div>
+      <p> Srijit koirala </p>
 
-      <div class="col">
-        <!-- map -->
-
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56517.27249954527!2d85.2462284486328!3d27.707110100000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb193563420a8b%3A0x2bb23ea6fd024519!2sBravo%20International%20Education!5e0!3m2!1sen!2sus!4v1701935960832!5m2!1sen!2sus"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        <!-- map -->
-
+      <div class="credits">
+        Designed by <a> Srijit koirala</a>
       </div>
 
     </div>
   </div>
+  <!-- End section footer -->
 
-  <!-- Contact us end-->
-  <!-- footer -->
-  <footer class="footer">
-    <div class="social-media">
-      <a href="https://www.facebook.com/bravointernationaleducation?mibextid=ZbWKwL" target="_blank"><img
-          src="image/fb.jpg" alt="Facebook"></a>
-      <a href="https://x.com/internatio97865?t=nfGlDrpW7s2O3ROkCGq2Rw&s=09" target="_blank"><img src="image/x logo.avif"
-          alt="Twitter"></a>
-      <a href="https://www.instagram.com/bravointernational.edu.np?igsh=MXZocmptcDFzbWU0dw==" target="_blank"><img
-          src="image/insta.avif" alt="Instagram"></a>
-    </div>
-    <h2 class="allrights">&copy; 2023 Bravo International. All rights reserved.</h2>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>
