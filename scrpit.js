@@ -14,3 +14,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     alert('Thank you for your message!');
     this.reset();
   });
+
+  function toggleMenu() {
+    const headerContent = document.querySelector('.header-content');
+    headerContent.classList.toggle('active');
+  }
