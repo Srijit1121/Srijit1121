@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Srijit Koirala</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"> <img src="/images/Logo.png" alt="Srijit Koirala Logo"> </a>
+        
+      </div>
+    </div>
+  </header>
+
+  <section id="admin-dashboard" class="section">
+    <div class="container">
+      <h2>Admin Dashboard</h2>
+      <form id="add-blog-form">
+        <div class="form-group">
+          <input type="text" id="blog-title" name="blog-title" placeholder="Blog Title" required>
+        </div>
+        <div class="form-group">
+          <textarea id="blog-content" name="blog-content" placeholder="Blog Content" required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="text" id="blog-image" name="blog-image" placeholder="Image URL" required>
+        </div>
+        <button type="submit">Add Blog</button>
+      </form>
+      <button id="logout-button" class="logout-button">Logout</button>
+    </div>
+   
+  </section>
+
+
+
+  <script src="admin.js"></script>
+</body>
+</html>

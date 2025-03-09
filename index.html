@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Srijit Koirala - Teacher, Freelancer, and Learner. Specializing in front-end development and UI/UX design.">
+<meta property="og:title" content="Srijit Koirala - Portfolio">
+<meta property="og:description" content="Explore the portfolio of Srijit Koirala, a passionate teacher, freelancer, and lifelong learner.">
+<meta property="og:image" content="/images/Portfolio.jpeg">
   <title> Srijit Koirala </title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,11 +16,11 @@
     <div class="container">
       <!-- Logo -->
       <div class="logo">
-        <img src="/images/Logo.png" alt="Srijit Koirala Logo">
+        <a href="index.html"> <img src="/images/Logo.png" alt="Srijit Koirala Logo"> </a>
       </div>
   
       <!-- Hamburger Menu Toggle -->
-      <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
         <i class="fas fa-bars"></i>
       </div>
   
@@ -28,12 +32,13 @@
             <li><a href="#description">Description</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html" class="login-button">Login</a></li>
           </ul>
         </nav>
+        
       </div>
     </div>
   </header>
-
   <!-- About Section -->
   <section id="about" class="section">
     <div class="container">
@@ -41,7 +46,7 @@
       <div class="about-content">
         <div class="profile-card">
           <div class="profile-img-container">
-            <img src="/images/Portfolio.jpeg" alt="Srijit Koirala" class="profile-img">
+            <img src="/images/Portfolio.jpeg" alt="Srijit Koirala" class="profile-img" loading="lazy">
             <div class="profile-overlay">
               <p>Click to Learn More</p>
             </div>
@@ -91,15 +96,17 @@
         <article class="blog-post">
           <a href="blog1.html">
             <div class="blog-image">
-              <img src="images/blog1.jpeg" alt="Blog 1">
+              <img src="images/blog1.jpeg" alt="A Trek to Sandakpur" loading="lazy">
             </div>
             <div class="blog-content">
               <h3>A Trek to Sandakpur</h3>
-              <p>Last month, my friends and I—nine of us in total—went on an amazing trip to Sandakpur in Ilam, Nepal. It was a journey filled with laughter, beautiful views, .</p>
+              <p class="date">Published on October 10, 2023</p>
+              <p>Last month, my friends and I—nine of us in total—went on an amazing trip to Sandakpur in Ilam, Nepal...</p>
               <button class="read-more">Read More</button>
             </div>
           </a>
         </article>
+
         <article class="blog-post">
           <a href="/blog4.html">
             <div class="blog-image">
@@ -107,6 +114,7 @@
             </div>
             <div class="blog-content">
               <h3>A Trek to Gosainkunda</h3>
+              <p class="date">Published on October 22, 2023</p>
               <p> My friend Sarup and I embarked on our first trekking adventure to Gosainkunda, a sacred lake dedicated to Lord Shiva.</p>
               <button class="read-more">Read More</button>
             </div>
@@ -119,6 +127,7 @@
             </div>
             <div class="blog-content">
               <h3>A Journey to Pathibhara Temple</h3>
+              <p class="date">Published on Januarary 7, 2024</p>
               <p>Our family trip to Pathibhara Temple in Taplejung was an unforgettable experience that beautifully combined spirituality, adventure, and nature’s grandeur.</p>
               <button class="read-more">Read More</button>
             </div>
@@ -131,6 +140,7 @@
             </div>
             <div class="blog-content">
               <h3>An Expedition to Upper Mustang</h3>
+              <p class="date">Published on February 14, 2024</p>
               <p>After an unforgettable journey to Pathibhara Temple, I embarked on yet another thrilling adventure with 8 of my close friends. This time, we set our sights on the remote, mystical land beyond the Himalayas: Upper Mustang.</p>
               <button class="read-more">Read More</button>
             </div>
@@ -140,17 +150,14 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
+   <!-- Contact Section -->
+   <section id="contact" class="section">
     <div class="container">
       <h2>Contact Me</h2>
       <div class="contact-container">
         <!-- Contact Form -->
         <div class="contact-form">
           <h3>Get in Touch</h3>
-          <p>
-            <br>
-          </p>
           <form id="contact-form">
             <div class="form-group">
               <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -202,8 +209,8 @@
           <h3>Follow Me</h3>
           <ul>
             <li><a href="https://github.com/Srijit1121" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-            <li><a href="https://www.facebook.com/sreezeet.koirala" target="_blank"><i class="fab fa-facebook"></i> facebook</a></li>
-            <li><a href="https://www.instagram.com/srijit73/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://www.facebook.com/sreezeet.koirala" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.instagram.com/srijit73/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
           </ul>
         </div>
 
@@ -220,9 +227,10 @@
 
       <!-- Footer Bottom -->
       <div class="footer-bottom">
-        <p>&copy; 2023 Srijit Koirala. All rights reserved.</p>
+        <p>&copy; <span id="current-year"></span> Srijit Koirala. All rights reserved.</p>
       </div>
     </div>
+    
   </footer>
 
   <script src="script.js"></script>
