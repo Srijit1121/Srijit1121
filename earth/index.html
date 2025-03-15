@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Solar System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="comet"></div>
+  <div class="solar-system">
+    <div class="sun" data-name="Sun" data-description="The Sun is the star at the center of the solar system. It is a nearly perfect sphere of hot plasma, radiating energy as light and heat."></div>
+    <!-- Orbital paths -->
+    <div class="orbit mercury-orbit"></div>
+    <div class="orbit venus-orbit"></div>
+    <div class="orbit earth-orbit"></div>
+    <div class="orbit mars-orbit"></div>
+    <div class="orbit jupiter-orbit"></div>
+    <div class="orbit saturn-orbit"></div>
+    <div class="orbit uranus-orbit"></div>
+    <div class="orbit neptune-orbit"></div>
+    <!-- Planets -->
+    <div class="planet mercury" data-name="Mercury" data-description="Mercury is the smallest and closest planet to the Sun. It has a rocky surface and no atmosphere."></div>
+    <div class="planet venus" data-name="Venus" data-description="Venus is the second planet from the Sun. It is the hottest planet in the solar system due to its thick atmosphere of carbon dioxide."></div>
+    <div class="planet earth" data-name="Earth" data-description="Earth is our home planet, the third from the Sun. It is the only known planet to support life, with a diverse ecosystem and liquid water."></div>
+    <div class="planet mars" data-name="Mars" data-description="Mars is the fourth planet from the Sun. Known as the Red Planet, it has a thin atmosphere and is a target for future human exploration."></div>
+    <div class="planet jupiter" data-name="Jupiter" data-description="Jupiter is the largest planet in the solar system. It is a gas giant with a strong magnetic field and many moons."></div>
+    <div class="planet saturn" data-name="Saturn" data-description="Saturn is the sixth planet from the Sun. It is known for its stunning ring system made of ice and rock."></div>
+    <div class="planet uranus" data-name="Uranus" data-description="Uranus is the seventh planet from the Sun. It is an ice giant with a unique sideways rotation."></div>
+    <div class="planet neptune" data-name="Neptune" data-description="Neptune is the eighth and farthest planet from the Sun. It is a cold, blue ice giant with strong winds."></div>
+  </div>
+  <div id="planet-info" class="planet-info"></div>
+  <script src="script.js"></script>
+</body>
+</html>
