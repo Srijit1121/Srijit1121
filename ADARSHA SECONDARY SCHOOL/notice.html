@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Notices - ADARSHA SECONDARY SCHOOL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Adarsha Secondary School, Biratnagar School, Nepal Education, School Notices">
+    <meta name="description" content="Latest notices and announcements from Adarsha Secondary School, Biratnagar">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Preload Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap"></noscript>
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        .notice-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid #FE5D37;
+            margin-bottom: 1.5rem;
+        }
+        .notice-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(254, 93, 55, 0.1);
+        }
+        .notice-urgent {
+            border-left-color: #dc3545;
+        }
+        .notice-important {
+            border-left-color: #ffc107;
+        }
+        .notice-date {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        .hero-header {
+            background: linear-gradient(rgba(16, 55, 65, .8), rgba(16, 55, 65, .8)), url(img/carousel-1.jpg) center center no-repeat;
+            background-size: cover;
+            color: white;
+            padding: 3rem 0;
+        }
+        .list-group-item.active {
+            background-color: #FE5D37;
+            border-color: #FE5D37;
+        }
+        @media (max-width: 768px) {
+            .notice-card {
+                margin-bottom: 1rem;
+            }
+            .search-container {
+                flex-direction: column;
+            }
+            .search-container input {
+                margin-bottom: 0.5rem;
+                margin-right: 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><img src="/img/Logo.png" height="100" ></h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About Us</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                            <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                                <a href="results.html" class="dropdown-item">Results</a>
+                                <a href="notice.html" class="dropdown-item active">Notices</a>
+                                <a href="news.html" class="dropdown-item">News</a>
+                                <a href="Pictures.html" class="dropdown-item">Pictures</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    <a href="" class="btn btn-primary rounded-pill px-3 d-lg-inline-block d-block mb-2 mb-lg-0">LOGIN<i class="fa fa-arrow-right ms-3"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <div class="container-fluid hero-header bg-primary py-5 mb-5">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <h1 class="display-3 text-white animated slideInDown">School Notices</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                                <li class="breadcrumb-item text-white active" aria-current="page">Notices</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notices Section -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-4">
+                    <!-- Sidebar -->
+                    <div class="col-lg-4">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0">Notice Categories</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="list-group list-group-flush" id="categoryList">
+                                    <a href="#" class="list-group-item list-group-item-action active" data-category="all">All Notices</a>
+                                    <a href="#" class="list-group-item list-group-item-action" data-category="Academic">Academic</a>
+                                    <a href="#" class="list-group-item list-group-item-action" data-category="Examinations">Examinations</a>
+                                    <a href="#" class="list-group-item list-group-item-action" data-category="Events">Events</a>
+                                    <a href="#" class="list-group-item list-group-item-action" data-category="Holidays">Holidays</a>
+                                    <a href="#" class="list-group-item list-group-item-action" data-category="Admissions">Admissions</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0">Important Dates</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <h6 class="text-primary">Upcoming Events</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="far fa-calendar-alt me-2"></i>15 Oct - Annual Sports Day</li>
+                                        <li class="mb-2"><i class="far fa-calendar-alt me-2"></i>25 Oct - Parent-Teacher Meeting</li>
+                                        <li><i class="far fa-calendar-alt me-2"></i>30 Oct - Mid-Term Examinations Begin</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h6 class="text-primary">Recent Downloads</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-file-pdf me-2 text-danger"></i><a href="#">Exam Schedule 2023</a></li>
+                                        <li class="mb-2"><i class="fas fa-file-word me-2 text-primary"></i><a href="#">Admission Form</a></li>
+                                        <li><i class="fas fa-file-excel me-2 text-success"></i><a href="#">School Calendar</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Main Content -->
+                    <div class="col-lg-8">
+                        <div class="d-flex justify-content-between align-items-center mb-4 search-container">
+                            <h2 class="mb-0">Latest Notices</h2>
+                            <div class="d-flex">
+                                <input type="text" class="form-control me-2" id="searchInput" placeholder="Search notices...">
+                                <button class="btn btn-primary" id="searchButton"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        
+                        <!-- Notices will be dynamically inserted here -->
+                        <div id="noticesContainer"></div>
+                        
+                        <!-- Pagination -->
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-3">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Get In Touch</h3>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Biratnagar - 7 , Nepal</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+977-9852074408</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>admin@adarshaschool.edu.np</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/adarshavidyalaya/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@adarshasecondaryschoolbira3191"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Quick Links</h3>
+                        <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="Pictures.html">Gallery</a>
+                        <a class="btn btn-link text-white-50" href="notice.html">Notices</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Important Links</h3>
+                        <a class="btn btn-link text-white-50" href="https://www.facebook.com/adarshavidiyalay/?ref=pages_you_manage">Adarsha School Facebook Page </a>
+                        <a class="btn btn-link text-white-50" href="https://moecdc.gov.np/">CDC</a>
+                        <a class="btn btn-link text-white-50" href="https://www.neb.gov.np/">NEB</a>
+                        <a class="btn btn-link text-white-50" href="https://www.biratnagarmun.gov.np/en">Biratnagar Metropolitian City</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Location</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.8368262808326!2d87.28365580454617!3d26.462229886994685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef743e496e0069%3A0x33b3089b94465f45!2sAdarsha%20Secondary%20School!5e1!3m2!1sen!2snp!4v1745582620921!5m2!1sen!2snp" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Adarsha Secondary school </a>, All Right Reserved. 
+                            Designed By <a class="border-bottom" href="https://srijit.com.np/">SRIJIT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+   <!-- JavaScript Libraries -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="lib/wow/wow.min.js"></script>
+   <script src="lib/easing/easing.min.js"></script>
+   <script src="lib/waypoints/waypoints.min.js"></script>
+   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+   <!-- Template Javascript -->
+   <script src="js/main.js"></script>
+   
+   <script>
+       // Notice data
+       const notices = [
+           {
+               id: 1,
+               title: "Mid-Term Examination Schedule",
+               content: "The schedule for the upcoming mid-term examinations has been published. All students are requested to check the examination dates and prepare accordingly.",
+               category: "Examinations",
+               priority: "urgent",
+               publishedDate: "October 5, 2023",
+               validUntil: "October 30, 2023"
+           },
+           {
+               id: 2,
+               title: "Annual Sports Day Participation",
+               content: "All students are invited to participate in our Annual Sports Day to be held on October 15, 2023. Please register with your class teacher by October 10.",
+               category: "Events",
+               priority: "important",
+               publishedDate: "October 3, 2023",
+               validUntil: "October 15, 2023"
+           },
+           {
+               id: 3,
+               title: "Library Book Return Notice",
+               content: "All students are requested to return their borrowed library books by October 20, 2023 for annual stock verification. Late returns will be fined.",
+               category: "Academic",
+               priority: "general",
+               publishedDate: "October 1, 2023",
+               validUntil: "October 20, 2023"
+           },
+           {
+               id: 4,
+               title: "Admission Open for 2024 Session",
+               content: "Admissions for the academic session 2024 are now open. Visit our school office or website for application forms and more information.",
+               category: "Admissions",
+               priority: "general",
+               publishedDate: "September 28, 2023",
+               validUntil: "November 30, 2023"
+           },
+           {
+               id: 5,
+               title: "Dashain Holiday Schedule",
+               content: "The school will remain closed for Dashain holidays from October 10 to October 22, 2023. Classes will resume on October 23.",
+               category: "Holidays",
+               priority: "general",
+               publishedDate: "September 25, 2023",
+               validUntil: "October 22, 2023"
+           }
+       ];
+
+       // DOM elements
+       const searchInput = document.getElementById('searchInput');
+       const searchButton = document.getElementById('searchButton');
+       const noticesContainer = document.getElementById('noticesContainer');
+       const categoryLinks = document.querySelectorAll('#categoryList a');
+
+       // Initialize the page
+       document.addEventListener('DOMContentLoaded', function() {
+           displayNotices(notices);
+           setupEventListeners();
+       });
+
+       function setupEventListeners() {
+           // Search button click event
+           searchButton.addEventListener('click', handleSearch);
+           
+           // Enter key press in search input
+           searchInput.addEventListener('keypress', function(e) {
+               if (e.key === 'Enter') {
+                   handleSearch();
+               }
+           });
+           
+           // Category filter click events
+           categoryLinks.forEach(link => {
+               link.addEventListener('click', function(e) {
+                   e.preventDefault();
+                   const category = this.getAttribute('data-category');
+                   filterNoticesByCategory(category);
+                   
+                   // Update active state
+                   categoryLinks.forEach(item => item.classList.remove('active'));
+                   this.classList.add('active');
+               });
+           });
+       }
+
+       function handleSearch() {
+           const searchTerm = searchInput.value.toLowerCase().trim();
+           
+           if (searchTerm === '') {
+               displayNotices(notices);
+               return;
+           }
+           
+           const filteredNotices = notices.filter(notice => {
+               return (
+                   notice.title.toLowerCase().includes(searchTerm) ||
+                   notice.content.toLowerCase().includes(searchTerm) ||
+                   notice.category.toLowerCase().includes(searchTerm)
+               );
+           });
+           
+           displayNotices(filteredNotices);
+       }
+
+       function filterNoticesByCategory(category) {
+           if (category === 'all') {
+               displayNotices(notices);
+               return;
+           }
+           
+           const filteredNotices = notices.filter(notice => 
+               notice.category === category
+           );
+           
+           displayNotices(filteredNotices);
+       }
+
+       function displayNotices(noticesToDisplay) {
+           noticesContainer.innerHTML = '';
+           
+           if (noticesToDisplay.length === 0) {
+               noticesContainer.innerHTML = `
+                   <div class="alert alert-info">
+                       No notices found matching your criteria.
+                   </div>
+               `;
+               return;
+           }
+           
+           // Add the notices
+           noticesToDisplay.forEach(notice => {
+               const priorityClass = notice.priority === 'urgent' ? 'notice-urgent' : 
+                                   notice.priority === 'important' ? 'notice-important' : '';
+               
+               const priorityBadge = notice.priority === 'urgent' ? 'bg-danger' : 
+                                   notice.priority === 'important' ? 'bg-warning text-dark' : 'bg-primary';
+               
+               const priorityText = notice.priority === 'urgent' ? 'Urgent' : 
+                                  notice.priority === 'important' ? 'Important' : 'General';
+               
+               const noticeElement = document.createElement('div');
+               noticeElement.className = `card shadow-sm mb-4 notice-card ${priorityClass}`;
+               noticeElement.innerHTML = `
+                   <div class="card-body">
+                       <div class="d-flex justify-content-between align-items-center mb-2">
+                           <span class="badge ${priorityBadge}">${priorityText}</span>
+                           <small class="notice-date"><i class="far fa-clock me-1"></i>Published: ${notice.publishedDate}</small>
+                       </div>
+                       <h4 class="mb-3">${notice.title}</h4>
+                       <p class="mb-3">${notice.content}</p>
+                       <div class="d-flex justify-content-between align-items-center">
+                           <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                           <small class="text-muted">Valid until: ${notice.validUntil}</small>
+                       </div>
+                   </div>
+               `;
+               
+               noticesContainer.appendChild(noticeElement);
+               
+               // Make notice card clickable
+               noticeElement.style.cursor = 'pointer';
+               noticeElement.addEventListener('click', function() {
+                   alert(`Viewing details for: ${notice.title}`);
+               });
+           });
+       }
+   </script>
+</body>
+</html>
