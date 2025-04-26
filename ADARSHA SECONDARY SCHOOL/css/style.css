@@ -98,145 +98,50 @@ h6,
 
 
 /*** Navbar ***/
-.navbar .navbar-nav .nav-link {
-    padding: 30px 15px;
-    color: var(--dark);
-    font-weight: 500;
-    outline: none;
-}
-
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
-}
-
-.navbar.sticky-top {
-    top: -100px;
-    transition: .5s;
-}
-
-.navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 5px;
-    transition: .5s;
-}
-
-.navbar .dropdown-toggle[aria-expanded=true]::after {
-    transform: rotate(-180deg);
-}
-
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
-        margin-right: 0;
-        padding: 10px 0;
+    .navbar-collapse {
+        max-height: 70vh;
+        overflow-y: auto;
+        padding: 1rem;
+        background: white;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
     }
-
-    .navbar .navbar-nav {
-        margin-top: 15px;
-        border-top: 1px solid #EEEEEE;
+    
+    .navbar-nav {
+        padding-top: 1rem;
     }
-}
-
-@media (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        top: calc(100% - 15px);
-        margin-top: 0;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s;
-        
+    
+    .nav-item {
+        margin-bottom: 0.5rem;
     }
-
-    .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        visibility: visible;
-        transition: .5s;
-        opacity: 1;
+    
+    .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        border: none;
+        box-shadow: none;
     }
 }
 
 
 /*** Header ***/
-.header-carousel::before,
-.header-carousel::after,
-.page-header::before,
-.page-header::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 10px;
-    top: 0;
-    left: 0;
-    background: url(../img/bg-header-top.png) center center repeat-x;
-    z-index: 1;
-}
-
-.header-carousel::after,
-.page-header::after {
-    height: 19px;
-    top: auto;
-    bottom: 0;
-    background: url(../img/bg-header-bottom.png) center center repeat-x;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .header-carousel .owl-carousel-item {
-        position: relative;
-        min-height: 500px;
+        min-height: 400px;
     }
     
-    .header-carousel .owl-carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .header-carousel h1 {
+        font-size: 2rem !important;
     }
-
-    .header-carousel .owl-carousel-item p {
-        font-size: 16px !important;
-        font-weight: 400 !important;
+    
+    .header-carousel p {
+        font-size: 1rem !important;
     }
-
-    .header-carousel .owl-carousel-item h1 {
-        font-size: 30px;
-        font-weight: 600;
+    
+    .header-carousel .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
     }
-}
-
-.header-carousel .owl-nav {
-    position: absolute;
-    top: 50%;
-    right: 8%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-}
-
-.header-carousel .owl-nav .owl-prev,
-.header-carousel .owl-nav .owl-next {
-    margin: 7px 0;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    background: transparent;
-    border: 1px solid #FFFFFF;
-    border-radius: 45px;
-    font-size: 22px;
-    transition: .5s;
-}
-
-.header-carousel .owl-nav .owl-prev:hover,
-.header-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
-    border-color: var(--primary);
 }
 
 .page-header {
@@ -521,4 +426,33 @@ map {
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+
+}
+
+@media (max-width: 767.98px) {
+    .footer .col-lg-3 {
+        margin-bottom: 2rem;
+    }
+    
+    .footer iframe {
+        height: 250px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .gallery-filter .btn {
+        margin: 0.25rem;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .form-floating {
+        margin-bottom: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+    }
 }
