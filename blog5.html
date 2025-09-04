@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nepal to Darjeeling & Sikkim Adventure - Srijit Koirala</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #2c3e50;
+      transition: color 0.3s;
+    }
+    
+    a:hover {
+      color: #3498db;
+    }
+    
+    /* Header Styles */
+    .sticky-header {
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 15px 0;
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo img {
+      height: 50px;
+    }
+    
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    
+    nav ul li {
+      margin-left: 25px;
+    }
+    
+    nav ul li a {
+      font-weight: 600;
+      font-size: 16px;
+    }
+    
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    
+    /* Blog Post Styles */
+    .section {
+      padding: 60px 0;
+    }
+    
+    #blog-post {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      margin: 30px auto;
+      padding: 40px;
+    }
+    
+    #blog-post h2 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      text-align: center;
+      position: relative;
+      padding-bottom: 15px;
+    }
+    
+    #blog-post h2:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 3px;
+      background: linear-gradient(to right, #3498db, #2c3e50);
+    }
+    
+    .blog-image {
+      margin: 30px 0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .blog-intro {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-left: 4px solid #3498db;
+      border-radius: 0 5px 5px 0;
+    }
+    
+    .blog-day {
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .blog-day:last-of-type {
+      border-bottom: none;
+    }
+    
+    .blog-day h3 {
+      font-size: 1.8rem;
+      color: #2c3e50;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .blog-day h3:before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #3498db;
+      margin-right: 10px;
+    }
+    
+    .blog-day p {
+      margin-bottom: 15px;
+      color: #555;
+      line-height: 1.8;
+    }
+    
+    .blog-conclusion {
+      margin-top: 40px;
+      padding: 30px;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      border-left: 4px solid #2c3e50;
+    }
+    
+    .blog-conclusion h3 {
+      font-size: 1.8rem;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    
+    /* Footer Styles */
+    .main-footer {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 50px 0 20px;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .footer-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #3498db;
+    }
+    
+    .footer-section ul {
+      list-style: none;
+    }
+    
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-section ul li a {
+      color: #ecf0f1;
+    }
+    
+    .footer-section ul li a:hover {
+      color: #3498db;
+    }
+    
+    .footer-section i {
+      margin-right: 10px;
+      color: #3498db;
+    }
+    
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #34495e;
+      color: #bdc3c7;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      
+      nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      
+      nav ul.show {
+        display: flex;
+      }
+      
+      nav ul li {
+        margin: 10px 0;
+      }
+      
+      #blog-post {
+        padding: 20px;
+      }
+      
+      #blog-post h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="sticky-header">
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html"> <img src="/images/Logo.png" alt="Srijit Koirala Logo"> </a>
+        </div>
+    
+        <!-- Hamburger Menu Toggle -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+    
+        <!-- Navigation -->
+        <nav>
+          <ul id="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#description">Description</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Blog Post Content -->
+  <section id="blog-post" class="section">
+    <div class="container">
+      <h2>The Ultimate Road Trip: Conquering the Himalayas from Nepal to Darjeeling & Sikkim</h2>
+      <div class="blog-post-content">
+        <div class="blog-image">
+          <img src="images/blog5i.jpg" alt="Himalayan Journey">
+        </div>
+        <p class="blog-intro">
+          There's a certain magic in the mountains that calls to the soul. It's a call that six of us answered last year with an ambitious plan: a motorcycle dash to the border followed by an epic exploration of the mystical hills of Sikkim and the colonial charm of Darjeeling. This is the story of our brotherhood, breathtaking landscapes, and the unforgettable adventure that unfolded over three incredible days.
+        </p>
+
+        <!-- Day 1 -->
+        <div class="blog-day">
+          <h3>Day 1: The Motorcycle Dash to the Border & A Night in Pashupatinagar</h3>
+          <p>
+            Our adventure began with the thunderous roar of our motorcycles. We started early from our hometown in Nepal, the excitement palpable. The ride itself was a preview of the beauty to come—winding roads, green valleys, and the feeling of absolute freedom.
+          </p>
+          <p>
+            After hours of riding, weaving through local traffic and open highways, we finally reached the Pashupatinagar-Sukhipokhari border. The process of crossing the border on foot with our luggage was a unique experience, filled with the bureaucratic hustle typical of international checkpoints.
+          </p>
+          <p>
+            Once we were on the Indian side, our first task was to find a place to crash for the night. Pashupatinagar is a small, bustling border town. We found a simple, no-frills guesthouse, parked our bikes securely for the duration of our hill journey, and immediately started looking for our next ride.
+          </p>
+          <p>
+            We managed to book a sturdy Mahindra Maxx jeep for the next two days. This wasn't just a vehicle; it was to become our chariot for the mountains. We spent the evening exploring the local market, devouring a hearty meal of dal-bhat-tarkari, and playing cards in our room, buzzing with anticipation for the climbs ahead.
+          </p>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="blog-day">
+          <h3>Day 2: Into the Clouds - Entering the Kingdom of Sikkim</h3>
+          <p>
+            We were up at the crack of dawn. Our trusted jeep and driver, Dai (big brother), were waiting. As we left the Terai plains behind, the road began to serpentine upwards. With every turn, the air got crisper and the views more dramatic.
+          </p>
+          <p>
+            <strong>Destination: Gangtok & Beyond!</strong>
+          </p>
+          <p>
+            The drive to Gangtok was an experience in itself. Lush green tea gardens, cascading waterfalls by the roadside, and the mighty Teesta River flowing alongside us like a turquoise ribbon. We made several stops for chai and to simply soak in the vistas.
+          </p>
+          <p>
+            We bypassed the hustle of Gangtok city and headed straight for the higher altitudes. Our goal was clear: to reach the famous Changu (Tsomgo) Lake.
+          </p>
+          <p>
+            <strong>The Ascent to Changu Lake (12,400 ft):</strong><br>
+            The journey from Gangtok to Changu is a different world. The vegetation changes, the temperature drops, and you feel the altitude in your breath. The final approach is guarded by Indian Army checkpoints (remember to carry your original ID proofs!), a reminder of the sensitive border region.
+          </p>
+          <p>
+            And then, we saw it. Changu Lake is nothing short of a masterpiece. The pristine, icy blue water reflected the surrounding snow-capped peaks perfectly. It was serene, powerful, and utterly breathtaking. We spent well over an hour there, just walking around the periphery, clicking a million photos, and sipping on hot soup from a local stall to fight the biting cold.
+          </p>
+          <p>
+            The yaks, decorated with colourful saddles, added a postcard-perfect element to the scene. Some of us even took a short yak ride, much to everyone's amusement!
+          </p>
+          <p>
+            <strong>Evening & Night:</strong><br>
+            Descending from the lake, we were on a natural high. We checked into a hotel in Gangtok, exhausted but exhilarated. The evening was spent exploring the MG Marg—a vibrant, pedestrian-only promenade filled with cafes, shops, and live music. We celebrated our successful day with a delicious meal of thukpa and steamed pork momos, sharing stories and laughter that echoed into the Sikkimese night.
+          </p>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="blog-day">
+          <h3>Day 3: The Queen of Hills - Darjeeling's Timeless Charm</h3>
+          <p>
+            We woke up to a misty morning in Sikkim, had a quick breakfast, and began our drive to Darjeeling in West Bengal. The route offered a whole new set of scenic splendours.
+          </p>
+          <p>
+            <strong>The Darjeeling Experience:</strong>
+          </p>
+          <p>
+            <strong>Toy Train Sightings:</strong> The iconic Darjeeling Himalayan Railway, a UNESCO World Heritage Site, chugged alongside our road at times, its tiny engine puffing steam through the pine forests. It was a delightful sight.
+          </p>
+          <p>
+            <strong>Tea Gardens:</strong> We stopped at a viewpoint overlooking the endless slopes of the Happy Valley Tea Estate. The patterned rows of tea bushes were a stunning visual treat.
+          </p>
+          <p>
+            <strong>The Mall Road & Observatory Hill:</strong> We explored the charming colonial architecture, browsed through local handicraft shops, and felt the cool breeze on our faces. The atmosphere was a blend of old-world charm and vibrant tourist energy.
+          </p>
+          <p>
+            <strong>A Culinary Finale:</strong> No trip to Darjeeling is complete without its food. We gorged on warm, buttery aloo dum with crispy bread, indulged in authentic Bengali sweets, and of course, had multiple cups of the world's finest Darjeeling tea.
+          </p>
+          <p>
+            As the sun began to set, casting a golden glow over the Kanchenjunga range (we were lucky with a partial clearing!), we found a quiet spot to just sit and absorb the moment. We had done it. From the hot plains of Nepal to the frozen lake of Sikkim and the romantic hills of Darjeeling.
+          </p>
+          <p>
+            <strong>The Journey Home:</strong><br>
+            Our return was a reverse of the first day, but the feeling was entirely different. The quiet on the drive back to the border was filled with a contented silence, each of us lost in our own memories of the incredible journey we had just shared.
+          </p>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="blog-conclusion">
+          <h3>Final Thoughts & Tips</h3>
+          <p>
+            <strong>Border Crossings:</strong> Always check the latest regulations for the Pashupatinagar border for Nepali citizens. Carry original citizenship cards and photos.
+          </p>
+          <p>
+            <strong>Jeep Bookings:</strong> Booking a jeep from the border is a smart move. The drivers are experienced with the hill roads and can double as guides.
+          </p>
+          <p>
+            <strong>Pack for All Weather:</strong> The weather in the Himalayas is unpredictable. Layers are your best friend—from t-shirts to a heavy jacket.
+          </p>
+          <p>
+            <strong>Permits for Changu Lake:</strong> Foreign nationals need a Protected Area Permit (PAP), which can be arranged in Gangtok through registered tour operators. As Nepali citizens, we used our original citizenship cards.
+          </p>
+          <p>
+            <strong>The Best Part:</strong> Traveling with friends multiplies the joy. The shared laughs, the inside jokes, the collective awe at nature's beauty—that's what makes a trip like this truly legendary.
+          </p>
+          <p>
+            This wasn't just a trip; it was a testament to friendship and the irresistible call of the mountains. Until the next adventure, Himalayas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#description">Description</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section">
+          <h3>Follow Me</h3>
+          <ul>
+            <li><a href="https://github.com/Srijit1121" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.facebook.com/sreezeet.koirala" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.instagram.com/srijit73/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul>
+            <li><i class="fas fa-envelope"></i> Email: ksrijit21@gmail.com</li>
+            <li><i class="fas fa-phone"></i> Phone: +977 9824349327</li>
+            <li><i class="fas fa-map-marker-alt"></i> Address: Biratnagar, Nepal</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2023 Srijit Koirala. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
